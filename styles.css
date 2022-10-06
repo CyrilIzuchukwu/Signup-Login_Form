@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(84, 136, 160);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.card{
+    height: 500px;
+    width: 400px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 60, 0.4);
+    perspective: 1000px;
+}
+.innerbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2s;
+}
+.card-front, .card-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/04.jpg);
+    backface-visibility: hidden;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.innerbox h2{
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+form .input-box{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    background: transparent;
+    text-align: center;
+    margin-bottom: 30px;
+}
+::placeholder{
+    color: #fff;
+}
+button{
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 0px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.submitbtn{
+    position: relative;
+
+}
+.submitbtn::after{
+    content: '\27a4';
+    color: #222;
+    line-height: 32px;
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    right: -1px;
+    top: 2px;
+}
+
+span{
+    color: white;
+    margin-left: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.btn{
+    margin-top: 60px;
+}

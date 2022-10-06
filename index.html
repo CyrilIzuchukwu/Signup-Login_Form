@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Rotate</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- card wrapper -->
+    <div class="container">
+        <div class="card">
+            
+            <!-- innerbox -->
+            <div class="innerbox" id="card">
+
+                <!-- card front for login -->
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form action="">
+                        <input type="email" class="input-box" placeholder="Enter Your Email">
+
+                        <input type="password" class="input-box" placeholder="Enter Your Password">
+
+                        
+                        <button type="submit" class="submitbtn">SUBMIT</button>
+                
+                    
+                        <input type="checkbox" class="checkbox"><span>Remember me</span>
+
+                    </form>
+
+                    <button type="button" class="btn" onclick="openRegister()">I'm new Here</button>
+                    <a href="">Forget Password?</a>
+                </div>
+                <!-- end of card front -->
+
+                <!-- card back for register -->
+                <div class="card-back">
+                    <h2>REGISTER</h2>
+                    <form action="">
+
+                        <input type="text" class="input-box" placeholder="Enter Your Username">
+
+                        <input type="email" class="input-box" placeholder="Enter Your Email">
+
+                        <input type="password" class="input-box" placeholder="Enter Your Password">
+
+                        
+                        <button type="submit" class="submitbtn">SUBMIT</button>
+                
+                    
+                        <input type="checkbox" class="checkbox"><span>Remember me</span>
+
+                    </form>
+
+                    <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+                </div>
+                <!-- end of card for register -->
+                
+            </div>
+        </div>
+        <!-- end of card wrapper -->
+    </div>
+
+
+    <script src="form.js"></script>
+    
+</body>
+</html>
